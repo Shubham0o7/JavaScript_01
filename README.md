@@ -14,11 +14,11 @@ The given code is written in JavaScript and involves creating and managing NFTs 
 
    function mintNFT(_name, _eyeColor, _shirtType, _shirtColor) { // Create an NFT object using the provided parameters const NFT = { "name": _name, "eyeColor": _eyeColor, "shirtType": _shirtType, "shirtColor": _shirtColor };
 
-// Add the NFT object to the NFTs array NFTs.push(NFT);
+   // Add the NFT object to the NFTs array NFTs.push(NFT);
 
-// Print a message indicating the NFT has been minted console.log("Minted: " + _name); }
+   // Print a message indicating the NFT has been minted console.log("Minted: " + _name); }
 
-The mintNFT function takes four parameters: _name, _eyeColor, _shirtType, and _shirtColor. It creates an NFT object using these parameters, adds it to the NFTs array, and logs a message indicating the successful minting of the NFT.
+   The mintNFT function takes four parameters: _name, _eyeColor, _shirtType, and _shirtColor. It creates an NFT object using these parameters, adds it to the NFTs array, and logs a message indicating the successful minting of the NFT.
 
 3. listNFTs Function:
 
