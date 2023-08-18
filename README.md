@@ -1,4 +1,5 @@
 Title: Create a NFT Collection
+
 Objective: In this project, I minted NFTs! Ok, not really, but we can pretend, yes? I simulated this by writing some JavaScript code that created an object that represents my NFT and that hold its metadata. This metadata can be anything you want. we used the following values like name, eye color, shirt type, shirt color, etc. After that, I created a variable to store all of my NFTs in. Next, I declared a function so as to print the details of epic NFTs to the console.
 
 
