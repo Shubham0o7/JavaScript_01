@@ -8,7 +8,7 @@ const NFTs = [];
 
 This line initializes an empty array called NFTs to store the NFT objects that will be created using the 'mintNFT' function.
 
-3. mintNFT Function:
+2. mintNFT Function:
    
 function mintNFT(_name, _eyeColor, _shirtType, _shirtColor) {
     // Create an NFT object using the provided parameters
