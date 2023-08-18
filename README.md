@@ -43,6 +43,7 @@ function listNFTs() {
 The listNFTs function iterates through the NFTs array and prints out the metadata of each NFT object, including the ID (index + 1), name, eye color, shirt type, and shirt color.
 
 4. getTotalSupply Function:
+
 function getTotalSupply() {
     console.log("\n" + NFTs.length);
 }
@@ -50,6 +51,7 @@ function getTotalSupply() {
 The getTotalSupply function simply prints the total number of NFTs minted, which is equal to the length of the NFTs array.
 
 5. Function Calls:
+
 mintNFT("Shubham", "Black", "Henley", "Beige");
 mintNFT("Rishabh", "Brown", "Flannel", "Blue");
 mintNFT("Sumoksh", "Brown", "Linen", "Black");
