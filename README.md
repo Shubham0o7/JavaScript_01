@@ -1,41 +1,73 @@
-Title: Create a NFT Collection
+## Project Title
 
-Objective: In this project, I minted NFTs! Ok, not really, but we can pretend, yes? I simulated this by writing some JavaScript code that created an object that represents my NFT and that hold its metadata. This metadata can be anything you want. we used the following values like name, eye color, shirt type, shirt color, etc. After that, I created a variable to store all of my NFTs in. Next, I declared a function so as to print the details of epic NFTs to the console.
+Create a NFT Collection
 
-The given code is written in JavaScript and involves creating and managing NFTs (Non-Fungible Tokens). NFTs are unique digital assets often used to represent ownership of digital or physical items in a blockchain-based environment. Let's break down the code step by step:
+## Description
 
-1. NFTs Array Initialization:
+In this project, I minted NFTs! Ok, not really, but we can pretend, yes? I simulated this by writing some JavaScript code that created an object that represents my NFT and that hold its metadata. This metadata can be anything you want. we used the following values like name, eye color, shirt type, shirt color, etc. After that, I created a variable to store all of my NFTs in. Next, I declared a function so as to print the details of epic NFTs to the console.
 
-   const NFTs = [];
+## Getting Started
 
-   This line initializes an empty array called NFTs to store the NFT objects that will be created using the 'mintNFT' function.
+###Features
 
-3. mintNFT Function:
+Non-Fungible Tokens, often abbreviated as NFTs, are a type of digital asset that represent ownership or proof of authenticity of a unique item or piece of content using blockchain technology. Unlike cryptocurrencies such as Bitcoin or Ethereum, which are fungible and can be exchanged on a one-to-one basis, NFTs are non-fungible, meaning each token is distinct and cannot be exchanged on a like-for-like basis. This project is implemented in JavaScript and involves creating and managing NFTs (Non-Fungible Tokens)
 
-   function mintNFT(_name, _eyeColor, _shirtType, _shirtColor) { // Create an NFT object using the provided parameters const NFT = { "name": _name, "eyeColor": _eyeColor, "shirtType": _shirtType, "shirtColor": _shirtColor };
+### Functions
+
+* mintNFT(_name, _eyeColor, _shirtType, _shirtColor)
+
+  The mintNFT function takes four parameters: _name, _eyeColor, _shirtType, and _shirtColor. It creates an NFT object
+  using these parameters, adds it to the NFTs array, and logs a message indicating the successful minting of the NFT.
+
+```
+   function mintNFT(_name, _eyeColor, _shirtType, _shirtColor) {
+   // Create an NFT object using the provided parameters
+   const NFT = { "name": _name, "eyeColor": _eyeColor, "shirtType": _shirtType, "shirtColor": _shirtColor };
 
    // Add the NFT object to the NFTs array NFTs.push(NFT);
+   // Print a message indicating the NFT has been minted
+   console.log("Minted: " + _name);
+   }
+```
 
-   // Print a message indicating the NFT has been minted console.log("Minted: " + _name); }
+* listNFTs() Function:
 
-   The mintNFT function takes four parameters: _name, _eyeColor, _shirtType, and _shirtColor. It creates an NFT object using these parameters, adds it to the NFTs array, and logs a message indicating the successful minting of the NFT.
+  The listNFTs function iterates through the NFTs array and prints out the metadata of each NFT object, including the
+  ID (index + 1), name, eye color, shirt type, and shirt color.
+```
+    function listNFTs() {
+    for (let i = 0; i < NFTs.length; i++) {
+    console.log("\nID: " + (i + 1));
+    console.log("Name: " + NFTs[i].name);
+    console.log("EyeColor: " + NFTs[i].eyeColor);
+    console.log("ShirtType: " + NFTs[i].shirtType);
+    console.log("ShirtColor: " + NFTs[i].shirtColor);
+    }
+    }
+```
 
-3. listNFTs Function:
+* getTotalSupply() Function:
 
-   function listNFTs() { for (let i = 0; i < NFTs.length; i++) { console.log("\nID: " + (i + 1)); console.log("Name: " + NFTs[i].name); console.log("EyeColor: " + NFTs[i].eyeColor); console.log("ShirtType: " + NFTs[i].shirtType); console.log("ShirtColor: " + NFTs[i].shirtColor); } }
+  The getTotalSupply function simply prints the total number of NFTs minted, which is equal to the length of the NFTs array.
+```
+    function getTotalSupply() {
+    console.log("\n" + NFTs.length);
+    }
+```
 
-   The listNFTs function iterates through the NFTs array and prints out the metadata of each NFT object, including the ID (index + 1), name, eye color, shirt type, and shirt color.
+### Implementation
 
-4. getTotalSupply Function:
-   
-   function getTotalSupply() { console.log("\n" + NFTs.length); }
+1. Open a JavaScript environment, We use gitpod to implement our project. You may you node.js.
+2. Copy and paste the provided code into the JavaScript environment.
+3. Modify the code by calling the mintNFT() function to mint NFTs with desired metadata. You can provide the following parameters('_name','_eyeColor', '_shirtType', '_shirtColor')
 
-   The getTotalSupply function simply prints the total number of NFTs minted, which is equal to the length of the NFTs array.
-
-6. Function Calls:
-
-   mintNFT("Shubham", "Black", "Henley", "Beige"); mintNFT("Rishabh", "Brown", "Flannel", "Blue"); mintNFT("Sumoksh", "Brown", "Linen", "Black"); mintNFT("Anurag", "Black", "Polo", "Brown"); listNFTs(); getTotalSupply();
-
-   These lines call the mintNFT function four times with different parameters to mint four NFTs. Then, it calls the listNFTs function to display the metadata of all minted NFTs, and finally, it calls the getTotalSupply function to print the total number of minted NFTs.
-
-Overall, this code simulates the creation, listing, and tracking of NFTs using JavaScript functions and an array to store the NFT objects' metadata.
+```
+    mintNFT("Shubham", "Black", "Henley", "Beige");
+    mintNFT("Rishabh", "Brown", "Flannel", "Blue");
+    mintNFT("Sumoksh", "Brown", "Linen", "Black");
+    mintNFT("Anurag", "Black", "Polo", "Brown");
+```
+  
+4. After minting NFTs, call the listNFTs() function to list the metadata of all minted NFTs.
+5. To get the total supply of minted NFTs, call the getTotalSupply() function.
+  
