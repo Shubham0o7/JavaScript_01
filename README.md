@@ -8,7 +8,7 @@ In this project, I minted NFTs! Ok, not really, but we can pretend, yes? I simul
 
 ## Getting Started
 
-###Features
+### Features
 
 Non-Fungible Tokens, often abbreviated as NFTs, are a type of digital asset that represent ownership or proof of authenticity of a unique item or piece of content using blockchain technology. Unlike cryptocurrencies such as Bitcoin or Ethereum, which are fungible and can be exchanged on a one-to-one basis, NFTs are non-fungible, meaning each token is distinct and cannot be exchanged on a like-for-like basis. This project is implemented in JavaScript and involves creating and managing NFTs (Non-Fungible Tokens)
 
